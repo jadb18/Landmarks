@@ -12,7 +12,7 @@ struct LandmarkDetail: View {
     var landmark: Landmark
     
     var landmarkIndex: Int {
-        modelData.landmarks.firstIndex(where: { $0.id == landmark.id})!
+        modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
     }
     
     var body: some View {
@@ -53,7 +53,10 @@ struct LandmarkDetail: View {
 }
 
 struct LandmarkDetail_Previews: PreviewProvider {
+    static let modelData = ModelData()
+    
     static var previews: some View {
         LandmarkDetail(landmark: ModelData().landmarks[0])
+            .environmentObject(modelData)
     }
 }
