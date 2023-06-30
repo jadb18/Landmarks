@@ -22,6 +22,7 @@
 		0565EEE22A33DBA300DA5786 /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0565EEE12A33DBA300DA5786 /* ProfileHost.swift */; };
 		0565EEE42A33DBEC00DA5786 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0565EEE32A33DBEC00DA5786 /* ProfileSummary.swift */; };
 		0565EEE62A33DDBA00DA5786 /* HikeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0565EEE52A33DDBA00DA5786 /* HikeBadge.swift */; };
+		0581CDDB2A4F429B00FAAB44 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0581CDDA2A4F429B00FAAB44 /* PageView.swift */; };
 		0586E3202A4E0D9F006F9BB5 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0586E31F2A4E0D9F006F9BB5 /* PageViewController.swift */; };
 		0586E3222A4E1003006F9BB5 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0586E3212A4E1003006F9BB5 /* FeatureCard.swift */; };
 		059E68022A15B2A40096B004 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E68012A15B2A40096B004 /* HexagonParameters.swift */; };
@@ -59,6 +60,7 @@
 		0565EEE12A33DBA300DA5786 /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
 		0565EEE32A33DBEC00DA5786 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		0565EEE52A33DDBA00DA5786 /* HikeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeBadge.swift; sourceTree = "<group>"; };
+		0581CDDA2A4F429B00FAAB44 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		0586E31F2A4E0D9F006F9BB5 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		0586E3212A4E1003006F9BB5 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
 		059E68012A15B2A40096B004 /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		0586E31E2A4E0D8E006F9BB5 /* PageView */ = {
 			isa = PBXGroup;
 			children = (
+				0581CDDA2A4F429B00FAAB44 /* PageView.swift */,
 				0586E31F2A4E0D9F006F9BB5 /* PageViewController.swift */,
 			);
 			path = PageView;
@@ -257,7 +260,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					05E881B22A0248A300629F7B = {
 						CreatedOnToolsVersion = 14.3;
@@ -319,6 +322,7 @@
 				0565EEE22A33DBA300DA5786 /* ProfileHost.swift in Sources */,
 				05B4D2E92A190DD800E10CD4 /* Hike.swift in Sources */,
 				059E680A2A15CA140096B004 /* RotatedBadgeSymbol.swift in Sources */,
+				0581CDDB2A4F429B00FAAB44 /* PageView.swift in Sources */,
 				059E68082A15C28D0096B004 /* BadgeSymbol.swift in Sources */,
 				052C0E0C2A3412B60086C3E2 /* ProfileEditor.swift in Sources */,
 				05E881C72A02521000629F7B /* CircleImage.swift in Sources */,
@@ -341,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -373,6 +378,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -401,6 +407,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -433,6 +440,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
