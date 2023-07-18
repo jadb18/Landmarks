@@ -15,6 +15,8 @@
 		053F9A8E2A0561C900D1887B /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053F9A8D2A0561C900D1887B /* ModelData.swift */; };
 		053F9A932A05699900D1887B /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053F9A922A05699900D1887B /* LandmarkRow.swift */; };
 		053F9A952A056BE600D1887B /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053F9A942A056BE600D1887B /* LandmarkList.swift */; };
+		054784CF2A63D1D1003C2E4A /* PushNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = 054784CE2A63D1D1003C2E4A /* PushNotificationPayload.apns */; };
+		054784D12A63D263003C2E4A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 054784D02A63D262003C2E4A /* Info.plist */; };
 		0547D99B2A15CBEA007BDD5D /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0547D99A2A15CBEA007BDD5D /* Badge.swift */; };
 		055D0A072A63BAF300B89246 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055D0A062A63BAF300B89246 /* NotificationView.swift */; };
 		055D0A092A63BC6B00B89246 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055D0A082A63BC6B00B89246 /* NotificationController.swift */; };
@@ -96,10 +98,11 @@
 		053F9A8D2A0561C900D1887B /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		053F9A922A05699900D1887B /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		053F9A942A056BE600D1887B /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		054784CE2A63D1D1003C2E4A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		054784D02A63D262003C2E4A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0547D99A2A15CBEA007BDD5D /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		055D0A062A63BAF300B89246 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		055D0A082A63BC6B00B89246 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		055D0A0A2A63C8B800B89246 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		0565EED82A33C7C400DA5786 /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
 		0565EEDA2A33CEAC00DA5786 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		0565EEDC2A33D0A600DA5786 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
@@ -226,11 +229,12 @@
 			children = (
 				0581CDE62A4F647B00FAAB44 /* ContentView.swift */,
 				05EAE5842A54EB200095E4D4 /* LandmarkDetail.swift */,
-				055D0A062A63BAF300B89246 /* NotificationView.swift */,
 				055D0A082A63BC6B00B89246 /* NotificationController.swift */,
+				055D0A062A63BAF300B89246 /* NotificationView.swift */,
+				054784CE2A63D1D1003C2E4A /* PushNotificationPayload.apns */,
+				054784D02A63D262003C2E4A /* Info.plist */,
 				0581CDE82A4F647D00FAAB44 /* Assets.xcassets */,
 				0581CDEA2A4F647D00FAAB44 /* Preview Content */,
-				055D0A0A2A63C8B800B89246 /* PushNotificationPayload.apns */,
 			);
 			path = WatchLandmarks;
 			sourceTree = "<group>";
@@ -407,10 +411,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				05EAE5812A54EA560095E4D4 /* hikeData.json in Resources */,
+				054784CF2A63D1D1003C2E4A /* PushNotificationPayload.apns in Resources */,
 				0581CDEC2A4F647D00FAAB44 /* Preview Assets.xcassets in Resources */,
 				0581CDE92A4F647D00FAAB44 /* Assets.xcassets in Resources */,
 				05EAE57E2A54EA560095E4D4 /* landmarkData.json in Resources */,
 				05EAE5832A54EA560095E4D4 /* Assets.xcassets in Resources */,
+				054784D12A63D263003C2E4A /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
