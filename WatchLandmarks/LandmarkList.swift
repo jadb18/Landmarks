@@ -1,8 +1,8 @@
 //
-//  LandmarksList.swift
-//  Landmarks
+//  LandmarkList.swift
+//  WatchLandmarks
 //
-//  Created by Jad Beydoun on 5/5/23.
+//  Created by Jad Beydoun on 7/18/23.
 //
 
 import SwiftUI
@@ -33,7 +33,6 @@ struct LandmarkList: View {
                 }
             }
             .navigationTitle("Landmarks")
-            .frame(minWidth: 300)
         }
     }
 }
@@ -42,10 +41,5 @@ struct LandmarksList_Previews: PreviewProvider {
     static var previews: some View {
         LandmarkList()
             .environmentObject(ModelData())
-//        ForEach(["iPhone SE (3rd generation)", "iPhone 14"], id: \.self) { deviceName in
-//            LandmarkList()
-//                .previewDevice(PreviewDevice(rawValue: deviceName))
-//                .previewDisplayName(deviceName)
-//        }
     }
 }

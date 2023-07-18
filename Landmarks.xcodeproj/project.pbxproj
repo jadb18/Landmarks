@@ -24,6 +24,8 @@
 		0511283D2A66732800B83E5B /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053F9A8D2A0561C900D1887B /* ModelData.swift */; };
 		0511283E2A66732800B83E5B /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B4D2E82A190DD800E10CD4 /* Hike.swift */; };
 		051128402A667F8C00B83E5B /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0511283F2A667F8B00B83E5B /* LandmarkDetail.swift */; };
+		051128422A66852A00B83E5B /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051128412A66852A00B83E5B /* LandmarkList.swift */; };
+		051128442A6685B500B83E5B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051128432A6685B500B83E5B /* ComplicationController.swift */; };
 		052C0E0C2A3412B60086C3E2 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052C0E0B2A3412B60086C3E2 /* ProfileEditor.swift */; };
 		0536EB0A2A54EE58008B0114 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053F9A922A05699900D1887B /* LandmarkRow.swift */; };
 		053B944B2A0C0138000E0CA7 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053B944A2A0C0138000E0CA7 /* LandmarkDetail.swift */; };
@@ -71,7 +73,6 @@
 		05EAE5792A54EA560095E4D4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E881C82A0252F400629F7B /* MapView.swift */; };
 		05EAE57A2A54EA560095E4D4 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053F9A8B2A05604B00D1887B /* Landmark.swift */; };
 		05EAE57B2A54EA560095E4D4 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053F9A8D2A0561C900D1887B /* ModelData.swift */; };
-		05EAE57C2A54EA560095E4D4 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053F9A942A056BE600D1887B /* LandmarkList.swift */; };
 		05EAE57D2A54EA560095E4D4 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E881C62A02521000629F7B /* CircleImage.swift */; };
 		05EAE57E2A54EA560095E4D4 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 053F9A892A05603200D1887B /* landmarkData.json */; };
 		05EAE57F2A54EA560095E4D4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0565EEDE2A33DA3500DA5786 /* Profile.swift */; };
@@ -113,6 +114,8 @@
 		0511282C2A66726400B83E5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0511282E2A66726400B83E5B /* MacLandmarks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacLandmarks.entitlements; sourceTree = "<group>"; };
 		0511283F2A667F8B00B83E5B /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		051128412A66852A00B83E5B /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		051128432A6685B500B83E5B /* ComplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		052C0E0B2A3412B60086C3E2 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 		053B944A2A0C0138000E0CA7 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		053F9A892A05603200D1887B /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
@@ -276,11 +279,13 @@
 			isa = PBXGroup;
 			children = (
 				0581CDE62A4F647B00FAAB44 /* ContentView.swift */,
+				051128412A66852A00B83E5B /* LandmarkList.swift */,
 				05EAE5842A54EB200095E4D4 /* LandmarkDetail.swift */,
 				055D0A082A63BC6B00B89246 /* NotificationController.swift */,
 				055D0A062A63BAF300B89246 /* NotificationView.swift */,
-				054784CE2A63D1D1003C2E4A /* PushNotificationPayload.apns */,
+				051128432A6685B500B83E5B /* ComplicationController.swift */,
 				0581CDE82A4F647D00FAAB44 /* Assets.xcassets */,
+				054784CE2A63D1D1003C2E4A /* PushNotificationPayload.apns */,
 				0581CDEA2A4F647D00FAAB44 /* Preview Content */,
 			);
 			path = WatchLandmarks;
@@ -541,14 +546,15 @@
 				0581CDE72A4F647B00FAAB44 /* ContentView.swift in Sources */,
 				05EAE57B2A54EA560095E4D4 /* ModelData.swift in Sources */,
 				05EAE5792A54EA560095E4D4 /* MapView.swift in Sources */,
+				051128422A66852A00B83E5B /* LandmarkList.swift in Sources */,
 				05EAE5802A54EA560095E4D4 /* LandmarksApp.swift in Sources */,
 				05EAE57F2A54EA560095E4D4 /* Profile.swift in Sources */,
 				05EAE57A2A54EA560095E4D4 /* Landmark.swift in Sources */,
 				05EAE5822A54EA560095E4D4 /* Hike.swift in Sources */,
-				05EAE57C2A54EA560095E4D4 /* LandmarkList.swift in Sources */,
 				0536EB0A2A54EE58008B0114 /* LandmarkRow.swift in Sources */,
 				055D0A092A63BC6B00B89246 /* NotificationController.swift in Sources */,
 				05EAE5852A54EB200095E4D4 /* LandmarkDetail.swift in Sources */,
+				051128442A6685B500B83E5B /* ComplicationController.swift in Sources */,
 				05EAE57D2A54EA560095E4D4 /* CircleImage.swift in Sources */,
 				055D0A072A63BAF300B89246 /* NotificationView.swift in Sources */,
 			);
@@ -625,7 +631,7 @@
 					"@executable_path/../Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = edu.umich.jadb.MacLandmarks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -657,7 +663,7 @@
 					"@executable_path/../Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = edu.umich.jadb.MacLandmarks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -697,7 +703,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 9.6;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -730,7 +736,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 9.6;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
