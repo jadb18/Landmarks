@@ -83,6 +83,7 @@
 		05EAE5852A54EB200095E4D4 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EAE5842A54EB200095E4D4 /* LandmarkDetail.swift */; };
 		05F64B442A79C0D2004DF781 /* LandmarkCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F64B432A79C0D2004DF781 /* LandmarkCommands.swift */; };
 		05F64B452A79C0D2004DF781 /* LandmarkCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F64B432A79C0D2004DF781 /* LandmarkCommands.swift */; };
+		05F64B472A79C5C2004DF781 /* LandmarkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F64B462A79C5C2004DF781 /* LandmarkSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +165,7 @@
 		05E881C82A0252F400629F7B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		05EAE5842A54EB200095E4D4 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		05F64B432A79C0D2004DF781 /* LandmarkCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkCommands.swift; sourceTree = "<group>"; };
+		05F64B462A79C5C2004DF781 /* LandmarkSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +321,7 @@
 			children = (
 				05E881C62A02521000629F7B /* CircleImage.swift */,
 				05E881C82A0252F400629F7B /* MapView.swift */,
+				05F64B462A79C5C2004DF781 /* LandmarkSettings.swift */,
 				05A26F1A2A109241009E7649 /* FavoriteButton.swift */,
 			);
 			path = Helpers;
@@ -530,6 +533,7 @@
 			files = (
 				051128282A66726200B83E5B /* ContentView.swift in Sources */,
 				051128382A66732800B83E5B /* Profile.swift in Sources */,
+				05F64B472A79C5C2004DF781 /* LandmarkSettings.swift in Sources */,
 				051128322A6672F200B83E5B /* LandmarkList.swift in Sources */,
 				051128352A6672FA00B83E5B /* MapView.swift in Sources */,
 				05F64B452A79C0D2004DF781 /* LandmarkCommands.swift in Sources */,
